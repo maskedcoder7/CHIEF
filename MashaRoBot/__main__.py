@@ -349,10 +349,9 @@ def Masha_about_callback(update: Update, context: CallbackContext):
             text=""" ℹ️ I'm *MASHA*, a powerful group management bot built to help you manage your group easily.
                  ❍ I can restrict users.
                  ❍ I can greet users with customizable welcome messages and even set a group's rules.
-                 ❍ I have an advanced anti-flood system.
+                 ❍ I can protect your groups with my powerfull gban that protects your groups with sppamer and scamer 
                  ❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
-                 ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-                 ❍ I check for admins' permissions before executing any command and more stuffs
+                 ❍ I have a note keeping system, blacklists,your with blackist stickerstuffs
                  \n_Masha's licensed under the GNU General Public License v3.0_
                  Here is the [💾Repository](https://github.com/Mr-Dark-Prince/MashaRoBot).
                  If you have any question about Masha, let us know at @WasteBots.""",
@@ -361,7 +360,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="masha_back")
+                    InlineKeyboardButton(text="Back", callback_data="Emcee_back")
                  ]
                 ]
             ),
@@ -381,7 +380,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *MASHA*
+            text=""" Hi..🤗 I'm *EMCEE*
                  \nHere is the [Source Code](https://github.com/Mr-Dark-Prince/MashaRoBot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
@@ -677,7 +676,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yes I'm alive 😹")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yes I AM ALIVE LUCKLY")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"

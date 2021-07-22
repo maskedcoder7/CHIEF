@@ -214,3 +214,11 @@ from MashaRoBot.modules.helper_funcs.handlers import (
 tg.RegexHandler = CustomRegexHandler
 tg.CommandHandler = CustomCommandHandler
 tg.MessageHandler = CustomMessageHandler
+
+
+pg = Client(
+        "Phoenix",
+        api_id=API_ID,
+        api_hash=API_HASH,
+        bot_token=TOKEN
+    )
